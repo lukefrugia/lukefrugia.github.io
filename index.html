@@ -1,6 +1,6 @@
 <html>
   <header>
-    <title>Assignment 3 Code Blog</title>
+    <title>Assignment 4 Code Blog</title>
     <link rel="stylesheet" href="blog.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@300;400&display=swap"
@@ -9,44 +9,45 @@
   </header>
   <body>
     <div class="wrapper">
-      <h1>Assignment 3 Code Blog</h1>
+      <h1>Assignment 4 Code Blog</h1>
       <h3>Luke Frugia</h3>
-      <h3>11/13/23</h3>
+      <h3>11/20/23</h3>
     </div>
-    <h2>What was challenging about Assignment 3:</h2>
+    <h2>What was challenging about Assignment 4:</h2>
     <p>
-      This was a challenging assignment for me. This was my first time scripting
-      in Javascript, so it was a learning experience for me. The most
-      challenging things I faced when writing
-      <a href="index.html">Assignment 3</a> were:
+      There were several things I thought were challenging completing Assignment
+      4:
     </p>
     <ul>
-      <li>Showing the modal.</li>
-      <li>Creating the new post HTML with Javascript.</li>
-      <li>Adding the data attributes to the posts.</li>
-      <li>Adding new posts after learning how to refilter.</li>
-      <li>Refiltering with <i>*all*</i> the posts.</li>
+      <li>Setting up the server.</li>
+      <li>The posts/n page.</li>
+      <li>Serving the CSS, Javascript, and Benny picture.</li>
     </ul>
     <h2>What I learned:</h2>
     <p>
-      After I found the modal HTML and CSS, I learned how to change the CSS
-      styling with Javascript from this
+      I found a
       <a
         href="https://medium.com/developerhelps/getelementbyid-display-none-faf96b4d24b0"
-        >webpage</a
+        >YoutTube video</a
       >
-      and implemented it in the buttonClickHandler and closePopup functions.
+      that helped me set up the server using the HTTP node.js library
     </p>
 
     <p>
-      It took me some googling to figure out how to add data attributes when I
-      was creating new posts. Before I starting implementing refiltering, I
-      added these new posts to the posts with getElementById("posts"). This
-      broke because I was deleting everything in the posts div and using an
-      NodeArray that stored the original posts to refilter. It ended up taking a
-      bit of Googling and talking with
-      <a href="https://chat.openai.com/">ChatGPT</a> to figure out that I needed
-      to use Array.from to push a post to the array.
+      It took me a while to figure out how to serve the posts/n page. It took
+      some talking with <a href="https://chat.openai.com/">ChatGPT</a> to learn
+      that I had to use req.url.substring and the isNaN function to test if n
+      was a valid number.
+    </p>
+
+    <p>
+      The hardest part of this assignment for me was serving style.css,
+      index.js, and benny.jpg. At first, I didn't realize that I had to set up
+      responses for those files and tried to include them when serving my html
+      files. I was really confused with
+      <a href="google.com">Google</a> and
+      <a href="https://chat.openai.com/">ChatGPT's</a> answers, and ended up
+      having an aha moment and figuring the solution on my own.
     </p>
   </body>
 </html>
